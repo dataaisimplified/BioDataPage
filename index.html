@@ -76,42 +76,43 @@ button{
 /* MOBILE */
 @media(max-width:768px){
 
+  /* LAYOUT */
   .content {
     display:grid;
-    grid-template-columns: 1fr 110px;
-    gap:12px;
+    grid-template-columns: 1fr 100px;
+    gap:10px;
   }
 
   .photo-box {
     grid-column:2;
-    width:110px;
-    height:140px;
+    width:100px;
+    height:130px;
   }
 
   .details {
     grid-column:1;
   }
 
-  /* 🔥 FIX HERE */
+  /* 🔥 REAL FIX */
   .row {
-    display:flex;
-    align-items:flex-start;
-    gap:6px;
+    display:block;
+    margin-bottom:14px;
   }
 
   .label {
-    width:110px;          /* slightly smaller */
+    width:auto;
     font-size:14px;
+    font-weight:600;
+    margin-bottom:2px;
   }
 
   .colon {
-    display:block;
-    width:auto;
+    display:none;   /* ❌ remove colon on mobile */
   }
 
   .value {
-    flex:1;
     font-size:14px;
+    line-height:1.4;
     word-break:break-word;
   }
 
